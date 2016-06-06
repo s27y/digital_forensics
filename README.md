@@ -1,3 +1,8 @@
+## A Python DFIR Wizard
+
+http://hackingexposedcomputerforensicsblog.blogspot.com/2015/02/automating-dfir-how-to-series-on.html
+
+
 ### Setup
 
 * python

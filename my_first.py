@@ -17,11 +17,13 @@ def print_partition_table(partitionTable):
         partitionTable
     """
     if partitionTable:
-        print '%-5s %-20s %-20s %-10s' % ('addr', 'desc' ,'start(start*512)', 'len(mb)')
+        print '%-5s %-20s %-20s %-10s' %  \ 
+            ('addr', 'desc' ,'start(start*512)', 'len(mb)')
     for partition in partitionTable:
         print '%-5s %-20s %-20s %-10s' % \
-            (partition.addr, partition.desc, 
-            '%ss(%s)' % (partition.start, partition.start * 512), '%s(%s)' % (partition.len,partition.len*512/1024/1024))
+            (partition.addr, partition.desc,
+            '%ss(%s)' % (partition.start, partition.start * 512),
+            '%s(%s)' % (partition.len,partition.len*512/1024/1024))
 
 
 def main():
